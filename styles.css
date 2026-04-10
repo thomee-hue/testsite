@@ -1,0 +1,24 @@
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 6px 12px;
+}
+
+nav a:hover {
+    background-color: gold;
+    color: black;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 15px auto;
+    border: 3px solid green;
+    border-radius: 6px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}

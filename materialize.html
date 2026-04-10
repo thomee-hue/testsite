@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize - The Masters Golf Tournament</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="green darken-3">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">The Masters</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">History</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="materialize.html">Materialize</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="green-text darken-3">Masters Media</h2>
+
+        <!-- Circular Image -->
+        <div class="center-align" style="margin: 30px 0;">
+            <img src="masters.jpg" alt="Masters Golf"
+                 class="circle responsive-img"
+                 style="width: 200px; height: 200px; object-fit: cover;">
+        </div>
+
+        <!-- Video Embed -->
+        <div class="video-container" style="margin: 30px 0;">
+            <iframe width="560" height="315"
+                src="https://youtu.be/N48C6nubjIs?si=Ows1ACcdLCHmf0d-"
+                title="Masters Highlights"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Cards -->
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card green darken-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">Augusta National</span>
+                        <p>Home of the Masters Tournament since 1934.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card green darken-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">The Green Jacket</span>
+                        <p>Awarded to the Masters champion every year.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card green darken-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">Amen Corner</span>
+                        <p>Holes 11, 12, and 13 — the most iconic stretch in golf.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="green darken-4 white-text center-align" style="padding: 20px;">
+        <p>Created by Elliot Thome, Masters Golf Website Project</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

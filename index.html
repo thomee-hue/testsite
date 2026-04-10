@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Masters Golf Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> The Masters Golf Tournament</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">History</a>
+            <a href="contact.html">Contact</a>
+            <a href="materialize.html">Materialize</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to the Masters</h2>
+            <p>
+                The Masters is one of the most famous golf Tournaments in the world. It is played every year at <strong>Augusta National Golf Club</strong> in Georgia. Many golf fans look forward to this event because it brings together the best players from around the world. The course is known for its beauty, its difficulty, and its tradition. One of the most recognizable symbols of the Tournament is the <em>Green Jacket</em>, which is awarded to the winner. The Masters stands out from other major golf Tournaments because it is always played at the same course. This makes it special for players and fans because they know each hole and its history. the Tournament is not just about golf, but also about tradition, pressure, and greatness.
+            </p>
+
+            <p>
+                What makes the Masters so exiting is the way it combines competition with history. Fans remember legendary moments like Tiger Woods comback win in 2019 and other dramatic finishes over the years. Every spring, the tournament becomes one of biggest sports events on tv. The famous holes, like Amen Cornner, create suspense because one small mistake can change everything. Tyhe Masters also has a peaceful and classy image compaired to many other sporting events. <u>Its traditions and setting make it unique</u> in the world of sports. For many people, watching the masters means the start of spring and the return of championship golf. That is why the event continues to be respected around The world.
+            </p>
+        </section>
+       
+        <aside> 
+            <h2>Quick Facts</h2>
+            <ul>
+                <li>Location: Augusta, Georgia</li>
+                <li>First played: 1934</li>
+                <li>Famous prize: Green Jacket</li>
+            </ul>
+        </aside>
+        <section>
+            <h2>Recent Masters Winners</h2>
+            <table>
+                <tr>
+                    <th>Year</th>
+                    <th>Winner</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>Scottie Scheffler</td>
+                    <td>United States</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Jon Rahm</td>
+                    <td>Spain</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Scottie Scheffler</td>
+                    <td>United States</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Hideki Matsuyama</td>
+                    <td>Japan</td>
+                </tr>
+            </table>
+        </section>
+        section>
+    <h2>Score Tracker</h2>
+    <p>Track your score hole by hole:</p>
+    <button onclick="changeScore(-1)">Birdie (-1)</button>
+    <span id="scoreDisplay">Score: 0</span>
+    <button onclick="changeScore(1)">Bogey (+1)</button>
+    <button onclick="resetScore()">Reset</button>
+</section>
+<section>
+    <h2>Masters Trivia</h2>
+    <p>What year was the first Masters played?</p>
+    <input type="text" id="quizAnswer" placeholder="Type your answer...">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="quizResult"></p>
+</section>
+    </main>
+
+    <footer>
+        <p>Created by Elliot Thome, Masters Golf Website Project</p>
+    </footer>
+    <img src="masters.jpg" alt="Masters Golf Tournament" class="masters-image">
+<script>
+    let score = 0;
+
+    function changeScore(amount) {
+        score += amount;
+        document.getElementById("scoreDisplay").textContent = "Score: " + score;
+    }
+
+    function resetScore() {
+        score = 0;
+        document.getElementById("scoreDisplay").textContent = "Score: 0";
+    }
+function checkAnswer() {
+    let answer = document.getElementById("quizAnswer").value;
+    let result = document.getElementById("quizResult");
+    if (answer === "1934") {
+        result.textContent = "Correct! The first Masters was in 1934.";
+        result.style.color = "green";
+    } else {
+        result.textContent = "Not quite, try again!";
+        result.style.color = "red";
+    }
+</script>
+    </body>
+    </html>
