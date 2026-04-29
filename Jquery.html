@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Masters - JQuery</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; }
+        header { background-color: #006400; color: white; padding: 20px; }
+        h1 { margin: 0; }
+        .navbar a { color: white; margin-right: 15px; text-decoration: none; }
+        section { padding: 30px; margin: 20px; border-radius: 8px; }
+        button { padding: 10px 20px; margin-top: 10px; cursor: pointer; }
+        hr { margin: 10px 0; }
+    </style>
+
+    <!-- Interaction 1: Mouseenter Alert -->
+    <script>
+        $(document).ready(function() {
+            $("#p1").mouseenter(function() {
+                alert("Welcome to the Masters JQuery Page!");
+            });
+        });
+    </script>
+
+    <!-- Interaction 2: Click to Hide -->
+    <script>
+        $(document).ready(function() {
+            $("p").click(function() {
+                $(this).hide();
+            });
+        });
+    </script>
+
+    <!-- Interaction 3: Toggle paragraphs -->
+    <script>
+        $(document).ready(function() {
+            $("#toggleBtn").click(function() {
+                $(".toggleTarget").toggle();
+            });
+        });
+    </script>
+
+    <!-- Interaction 4: Slide and color change -->
+    <script>
+        $(document).ready(function() {
+            $("#slideBtn").click(function() {
+                $("#p1").css("color", "green").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>The Masters Golf Tournament</h1>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="players.html">Players</a>
+        <a href="jquery.html">JQuery</a>
+    </div>
+</header>
+
+<body>
+
+<!-- Section 1: Mouseenter -->
+<section style="background-color: #ccc3ee;">
+    <p id="p1">Some JQuery for the Masters — hover over me!</p>
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+</section>
+
+<hr>
+
+<!-- Section 2: Toggle -->
+<section style="background-color: #f1a1e8;">
+    <button id="toggleBtn">Toggle between hiding and showing the paragraphs</button>
+    <p class="toggleTarget">This is a paragraph with little content.</p>
+    <p class="toggleTarget">This is another small paragraph.</p>
+</section>
+
+<hr>
+
+<!-- Section 3: Slide + Color -->
+<section style="background-color: #79f299;">
+    <p id="p1">Click the button to see a cool effect!</p>
+    <button id="slideBtn">Click me</button>
+</section>
+
+</body>
+</html>
