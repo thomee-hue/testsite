@@ -1,8 +1,10 @@
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 6px 12px;
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 6px 12px;
+  background-color: gold;
+  display: inline-block;
 }
 
 nav a:hover {
@@ -21,12 +23,4 @@ img {
 
 ul li {
     margin-bottom: 8px;
-}
-nav a {
-  display: inline-block;
-  margin: 5px;
-  padding: 8px 12px;
-  background-color: gold;
-  color: black;
-  text-decoration: none;
 }
