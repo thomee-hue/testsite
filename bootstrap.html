@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Masters - Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>The Masters Golf Tournament</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">History</a>
+    <a href="contact.html">Contact</a>
+    <a href="materialize.html">Materialize</a>
+    <a href="Jquery.html">JQuery</a>
+    <a href="bootstrap.html">Bootstrap</a>
+  </nav>
+</header>
+
+<div class="container mt-4">
+
+  <!-- Interaction 1: Alert Banner -->
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    Welcome to the Masters Bootstrap Page!
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+
+  <!-- Interaction 2: Form -->
+  <div class="card mt-4 p-4">
+    <h2>Masters Fan Form</h2>
+    <div class="mb-3">
+      <label class="form-label">Your Name</label>
+      <input type="text" class="form-control" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Favorite Masters Winner</label>
+      <input type="text" class="form-control" placeholder="e.g. Tiger Woods">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Comments</label>
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <button class="btn btn-success">Submit</button>
+  </div>
+
+  <!-- Interaction 3: Collapsible Section -->
+  <div class="mt-4">
+    <h2>Masters Fun Facts</h2>
+    <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#funFacts">
+      Show/Hide Fun Facts
+    </button>
+    <div class="collapse mt-2" id="funFacts">
+      <ul class="list-group">
+        <li class="list-group-item">The Green Jacket has been awarded since 1949</li>
+        <li class="list-group-item">Tiger Woods has won the Masters 5 times</li>
+        <li class="list-group-item">Augusta National was founded in 1933</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
